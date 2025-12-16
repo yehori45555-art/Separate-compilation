@@ -1,12 +1,12 @@
 # Separate-compilation
-Є три файли: frstfile.cpp, scndfile.cpp та thrdfile.cpp.
+Є три файли: one.cpp, two.cpp та three.cpp.
 Ми компілюємо їх за допомогою таких команд:
 
-g++ -c frstfile.cpp
-g++ -c scndfile.cpp
-g++ -c thrdfile.cpp
+'g++ -c one.cpp'
+'g++ -c two.cpp'
+'g++ -c three.cpp'
 
-В результаті ми отримуємо три об'єктні файли: frstfile.o, scndfile.o та thrdfile.o.
+В результаті ми отримуємо три об'єктні файли: one.o, two.o та three.o.
 Щоб створити остаточну виконувану програму, я виконав таку команду:
 
-g++ -c frstfile.o scndfile.o thrdfile.o -o finalprogram
+'''g++ -c one.o two.o three.o -o finalprogram'''
